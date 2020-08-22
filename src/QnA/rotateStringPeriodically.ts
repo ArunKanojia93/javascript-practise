@@ -1,5 +1,5 @@
 export const rotate = () => {
-  const myVar = setInterval(rotateString, 200);
+  setInterval(rotateString, 200);
 
   const word = "w3resource ";
   const newArray = word.split("");
@@ -8,7 +8,7 @@ export const rotate = () => {
     const letter = newArray.pop() as string;
     const newWord = newArray.unshift(letter);
     const theWord = newArray.join("");
-    document.getElementById("moveIt")!.innerHTML = theWord;
+    document.getElementById("rotate")!.innerHTML = theWord;
   }
 };
 
