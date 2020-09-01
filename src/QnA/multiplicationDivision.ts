@@ -9,11 +9,11 @@ export const multiplicationDivision = (id: string) => {
     return;
   }
   if (id === "Divide") {
-    const result = number1 / number2;
+    const result = parseInt(number1) / parseInt(number2);
     document.getElementById("divide-multiply")!.textContent = result.toString();
   }
   if (id === "Multiply") {
-    const result = number1 * number2;
+    const result = parseInt(number1) * parseInt(number2);
     document.getElementById("divide-multiply")!.textContent = result.toString();
   }
 };

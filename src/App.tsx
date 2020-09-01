@@ -1,15 +1,25 @@
 import React from "react";
 import "./App.css";
+import { celciusFahrenheit } from "./QnA/celciusFahrenheit";
 import { checkFirstJanuarySunday } from "./QnA/checkFirstJanuarySunday";
 import { checkLeapYear } from "./QnA/checkLeapYear";
 import { daysLeftUntilChristmas } from "./QnA/daysLeftUntilChristmas";
+import { diffBy13 } from "./QnA/diffBy13";
+import { diffBy19 } from "./QnA/diffBy19";
 import { getAreaOfTriangle } from "./QnA/getAreaOfTriangle";
 import { getCurrentDate } from "./QnA/getCurrentDate";
+import { getExtension } from "./QnA/getExtension";
+import { getWebsiteURL } from "./QnA/getWebsiteURL";
 import { guessNumber } from "./QnA/guessNumber";
+import { is50 } from "./QnA/is50";
 import { multiplicationDivision } from "./QnA/multiplicationDivision";
 import { printWindow } from "./QnA/printWindow";
+import { question20 } from "./QnA/question20";
 import { qurrentDayAndTime } from "./QnA/qurrentDayAndTime";
 import { rotate } from "./QnA/rotateStringPeriodically";
+import { sumOfIntegers } from "./QnA/sumOfIntegers";
+import { userDefinedVar } from "./QnA/userDefinedVar";
+import { within20 } from "./QnA/within20";
 
 rotate();
 
@@ -84,10 +94,17 @@ function App() {
         <p>
           Input Year:{" "}
           <span>
-            <input type="text" id="year" placeholder="Enter Year" />
+            <input type="text" id="year" placeholder="Enter year" />
           </span>
         </p>
-        <button onClick={() => checkLeapYear()}>Check Leap Year</button>
+        <div style={{ display: "flex", marginTop: 12, width: 260 }}>
+          <button
+            onClick={() => checkLeapYear()}
+            style={{ marginLeft: "auto" }}
+          >
+            Check Leap Year
+          </button>
+        </div>
         <div style={{ textTransform: "capitalize" }} id="leap-year"></div>
       </div>
       <div className="question-container">
@@ -129,11 +146,21 @@ function App() {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex" }}>
             Number1:{" "}
-            <input id="number1" style={{ marginLeft: 12 }} type="number" />
+            <input
+              id="number1"
+              style={{ marginLeft: 12 }}
+              type="number"
+              placeholder="Enter number1"
+            />
           </div>
           <div style={{ display: "flex", marginTop: 12 }}>
             Number2:{" "}
-            <input id="number2" style={{ marginLeft: 12 }} type="number" />
+            <input
+              id="number2"
+              style={{ marginLeft: 12 }}
+              type="number"
+              placeholder="Enter number2"
+            />
           </div>
         </div>
         <div style={{ display: "flex", marginTop: 12, width: 300 }}>
@@ -164,6 +191,245 @@ function App() {
         </div>
         <p>
           Result: <span id="divide-multiply" />
+        </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          11. Write a JavaScript program to convert temperatures to and from
+          Celsius, Fahrenheit.
+        </h5>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            Input Temperature:{" "}
+            <input
+              id="temp"
+              style={{ marginLeft: 12 }}
+              type="number"
+              placeholder="Enter temperature"
+            />
+          </div>
+        </div>
+        <div style={{ display: "flex", marginTop: 12, width: 330 }}>
+          <button
+            id="celcius"
+            onClick={() =>
+              celciusFahrenheit(
+                (document.getElementById("celcius") as HTMLButtonElement)
+                  .innerHTML
+              )
+            }
+            style={{ marginLeft: "auto" }}
+          >
+            Celcius
+          </button>
+          <button
+            id="fahrenheit"
+            onClick={() =>
+              celciusFahrenheit(
+                (document.getElementById("fahrenheit") as HTMLButtonElement)
+                  .innerHTML
+              )
+            }
+            style={{ marginLeft: 12 }}
+          >
+            Fahrenheit
+          </button>
+        </div>
+        <p>
+          Result: <span id="celcius-fahrenheit" />
+        </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          12. Write a JavaScript program to get the website URL (loading page).
+        </h5>
+        <p>
+          URL: <span>{getWebsiteURL()}</span>
+        </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          13. Write a JavaScript exercise to create a variable using a
+          user-defined name.
+        </h5>
+        <p>
+          Variable: <span>{userDefinedVar("myVar")}</span>
+        </p>
+        <small style={{ color: "red" }}>needs clarification*</small>
+      </div>
+      <div className="question-container">
+        <h5>
+          14. Write a JavaScript exercise to get the extension of a filename.
+        </h5>
+        <p>
+          Result: <span>{getExtension("file.exe")}</span>
+        </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          15. Write a JavaScript program to get the difference between a given
+          number and 13, if the number is greater than 13 return double the
+          absolute difference.
+        </h5>
+        <p>
+          Input Number:{" "}
+          <span>
+            <input type="number" id="diffBy13" placeholder="Enter number" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <p>
+            Result: <span id="diff-by-13" />
+          </p>
+          <button onClick={() => diffBy13()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+      </div>
+      <div className="question-container">
+        <h5>
+          16. Write a JavaScript program to compute the sum of the two given
+          integers. If the two values are same, then returns triple their sum.
+        </h5>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            Number1:{" "}
+            <input
+              id="sumInteger1"
+              style={{ marginLeft: 12 }}
+              type="number"
+              placeholder="Enter number1"
+            />
+          </div>
+          <div style={{ display: "flex", marginTop: 12 }}>
+            Number2:{" "}
+            <input
+              id="sumInteger2"
+              style={{ marginLeft: 12 }}
+              type="number"
+              placeholder="Enter number2"
+            />
+          </div>
+        </div>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <button
+            onClick={() => sumOfIntegers()}
+            style={{ marginLeft: "auto" }}
+          >
+            Check
+          </button>
+        </div>
+        <p>
+          Result: <span id="sum-integers" />
+        </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          17. Write a JavaScript program to compute the absolute difference
+          between a specified number and 19. Returns triple their absolute
+          difference if the specified number is greater than 19.
+        </h5>
+        <p>
+          Input Number:{" "}
+          <span>
+            <input type="number" id="diffBy19" placeholder="Enter number" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <p>
+            Result: <span id="diff-by-19" />
+          </p>
+          <button onClick={() => diffBy19()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+      </div>
+      <div className="question-container">
+        <h5>
+          18. Write a JavaScript program to check two given numbers and return
+          true if one of the number is 50 or if their sum is 50.
+        </h5>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            Number1:{" "}
+            <input
+              id="50Number1"
+              style={{ marginLeft: 12 }}
+              type="number"
+              placeholder="Enter number1"
+            />
+          </div>
+          <div style={{ display: "flex", marginTop: 12 }}>
+            Number2:{" "}
+            <input
+              id="50Number2"
+              style={{ marginLeft: 12 }}
+              type="number"
+              placeholder="Enter number2"
+            />
+          </div>
+        </div>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <button onClick={() => is50()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+        <p>
+          Result: <span id="check-50" />
+        </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          19. Write a JavaScript program to check whether a given integer is
+          within 20 of 100 or 400.
+        </h5>
+        <p>
+          Input Number:{" "}
+          <span>
+            <input type="number" id="within20" placeholder="Enter number" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <p>
+            Result: <span id="within-20" />
+          </p>
+          <button onClick={() => within20()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+      </div>
+      <div className="question-container">
+        <h5>
+          20. Write a JavaScript program to check from two given integers,
+          whether one is positive and another one is negative.
+        </h5>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            Number1:{" "}
+            <input
+              id="q20input1"
+              style={{ marginLeft: 12 }}
+              type="number"
+              placeholder="Enter number1"
+            />
+          </div>
+          <div style={{ display: "flex", marginTop: 12 }}>
+            Number2:{" "}
+            <input
+              id="q20input2"
+              style={{ marginLeft: 12 }}
+              type="number"
+              placeholder="Enter number2"
+            />
+          </div>
+        </div>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <button onClick={() => question20()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+        <p>
+          Result: <span id="question-20" />
         </p>
       </div>
     </div>
