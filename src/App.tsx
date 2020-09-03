@@ -15,6 +15,16 @@ import { is50 } from "./QnA/is50";
 import { multiplicationDivision } from "./QnA/multiplicationDivision";
 import { printWindow } from "./QnA/printWindow";
 import { question20 } from "./QnA/question20";
+import { question21 } from "./QnA/question21";
+import { question22 } from "./QnA/question22";
+import { question23 } from "./QnA/question23";
+import { question24 } from "./QnA/question24";
+import { question25 } from "./QnA/question25";
+import { question26 } from "./QnA/question26";
+import { question27 } from "./QnA/question27";
+import { question28 } from "./QnA/question28";
+import { question29 } from "./QnA/question29";
+import { question30 } from "./QnA/question30";
 import { qurrentDayAndTime } from "./QnA/qurrentDayAndTime";
 import { rotate } from "./QnA/rotateStringPeriodically";
 import { sumOfIntegers } from "./QnA/sumOfIntegers";
@@ -145,22 +155,26 @@ function App() {
         </h5>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex" }}>
-            Number1:{" "}
-            <input
-              id="number1"
-              style={{ marginLeft: 12 }}
-              type="number"
-              placeholder="Enter number1"
-            />
+            <p>
+              Number1:{" "}
+              <input
+                id="number1"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number1"
+              />
+            </p>
           </div>
           <div style={{ display: "flex", marginTop: 12 }}>
-            Number2:{" "}
-            <input
-              id="number2"
-              style={{ marginLeft: 12 }}
-              type="number"
-              placeholder="Enter number2"
-            />
+            <p>
+              Number2:{" "}
+              <input
+                id="number2"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number2"
+              />
+            </p>
           </div>
         </div>
         <div style={{ display: "flex", marginTop: 12, width: 300 }}>
@@ -200,13 +214,15 @@ function App() {
         </h5>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex" }}>
-            Input Temperature:{" "}
-            <input
-              id="temp"
-              style={{ marginLeft: 12 }}
-              type="number"
-              placeholder="Enter temperature"
-            />
+            <p>
+              Input Temperature:{" "}
+              <input
+                id="temp"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter temperature"
+              />
+            </p>
           </div>
         </div>
         <div style={{ display: "flex", marginTop: 12, width: 330 }}>
@@ -293,22 +309,26 @@ function App() {
         </h5>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex" }}>
-            Number1:{" "}
-            <input
-              id="sumInteger1"
-              style={{ marginLeft: 12 }}
-              type="number"
-              placeholder="Enter number1"
-            />
+            <p>
+              Number1:{" "}
+              <input
+                id="sumInteger1"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number1"
+              />
+            </p>
           </div>
           <div style={{ display: "flex", marginTop: 12 }}>
-            Number2:{" "}
-            <input
-              id="sumInteger2"
-              style={{ marginLeft: 12 }}
-              type="number"
-              placeholder="Enter number2"
-            />
+            <p>
+              Number2:{" "}
+              <input
+                id="sumInteger2"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number2"
+              />
+            </p>
           </div>
         </div>
         <div style={{ display: "flex", marginTop: 12, width: 280 }}>
@@ -351,22 +371,26 @@ function App() {
         </h5>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex" }}>
-            Number1:{" "}
-            <input
-              id="50Number1"
-              style={{ marginLeft: 12 }}
-              type="number"
-              placeholder="Enter number1"
-            />
+            <p>
+              Number1:{" "}
+              <input
+                id="50Number1"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number1"
+              />
+            </p>
           </div>
           <div style={{ display: "flex", marginTop: 12 }}>
-            Number2:{" "}
-            <input
-              id="50Number2"
-              style={{ marginLeft: 12 }}
-              type="number"
-              placeholder="Enter number2"
-            />
+            <p>
+              Number2:{" "}
+              <input
+                id="50Number2"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number2"
+              />
+            </p>
           </div>
         </div>
         <div style={{ display: "flex", marginTop: 12, width: 280 }}>
@@ -405,22 +429,26 @@ function App() {
         </h5>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex" }}>
-            Number1:{" "}
-            <input
-              id="q20input1"
-              style={{ marginLeft: 12 }}
-              type="number"
-              placeholder="Enter number1"
-            />
+            <p>
+              Number1:{" "}
+              <input
+                id="q20input1"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number1"
+              />
+            </p>
           </div>
           <div style={{ display: "flex", marginTop: 12 }}>
-            Number2:{" "}
-            <input
-              id="q20input2"
-              style={{ marginLeft: 12 }}
-              type="number"
-              placeholder="Enter number2"
-            />
+            <p>
+              Number2:{" "}
+              <input
+                id="q20input2"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number2"
+              />
+            </p>
           </div>
         </div>
         <div style={{ display: "flex", marginTop: 12, width: 280 }}>
@@ -431,6 +459,278 @@ function App() {
         <p>
           Result: <span id="question-20" />
         </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          21. Write a JavaScript program to create a new string adding "Py" in
+          front of a given string. If the given string begins with "Py" then
+          return the original string.
+        </h5>
+        <p>
+          Input Text:{" "}
+          <span>
+            <input type="text" id="q21" placeholder="Enter Text" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <p>
+            Result: <span id="question-21" />
+          </p>
+          <button onClick={() => question21()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+      </div>
+      <div className="question-container">
+        <h5>
+          22. Write a JavaScript program to remove a character at the specified
+          position of a given string and return the new string.
+        </h5>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            <p>
+              Input Text:{" "}
+              <input
+                id="q22Input1"
+                style={{ marginLeft: 12 }}
+                type="text"
+                placeholder="Enter Text"
+              />
+            </p>
+          </div>
+          <div style={{ display: "flex", marginTop: 12 }}>
+            <p>
+              Input Number:{" "}
+              <input
+                id="q22Input2"
+                style={{ marginLeft: 12, width: 40 }}
+                type="number"
+              />
+            </p>
+          </div>
+        </div>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <button onClick={() => question22()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+        <p>
+          Result: <span id="question-22" />
+        </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          23. Write a JavaScript program to create a new string from a given
+          string changing the position of first and last characters. The string
+          length must be greater than or equal to 1.
+        </h5>
+        <p>
+          Input Text:{" "}
+          <span>
+            <input type="text" id="q23" placeholder="Enter Text" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <p>
+            Result: <span id="question-23" />
+          </p>
+          <button onClick={() => question23()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+      </div>
+      <div className="question-container">
+        <h5>
+          24. Write a JavaScript program to create a new string from a given
+          string with the first character of the given string added at the front
+          and back.
+        </h5>
+        <p>
+          Input Text:{" "}
+          <span>
+            <input type="text" id="q24" placeholder="Enter text" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <p>
+            Result: <span id="question-24" />
+          </p>
+          <button onClick={() => question24()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+      </div>
+      <div className="question-container">
+        <h5>
+          25. Write a JavaScript program to check whether a given positive
+          number is a multiple of 3 or a multiple of 7.
+        </h5>
+        <p>
+          Input Number:{" "}
+          <span>
+            <input type="number" id="q25" placeholder="Enter number" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 290 }}>
+          <p>
+            Result: <span id="question-25" />
+          </p>
+          <button onClick={() => question25()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+      </div>
+      <div className="question-container">
+        <h5>
+          26. Write a JavaScript program to create a new string from a given
+          string taking the last 3 characters and added at both the front and
+          back. The string length must be 3 or more.
+        </h5>
+        <p>
+          Input Text:{" "}
+          <span>
+            <input type="text" id="q26" placeholder="Enter text" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <p>
+            Result: <span id="question-26" />
+          </p>
+          <button onClick={() => question26()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+      </div>
+      <div className="question-container">
+        <h5>
+          27. Write a JavaScript program to check whether a string starts with
+          'Java' and false otherwise.
+        </h5>
+        <p>
+          Input Text:{" "}
+          <span>
+            <input type="text" id="q27" placeholder="Enter text" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <p>
+            Result: <span id="question-27" />
+          </p>
+          <button onClick={() => question27()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+      </div>
+      <div className="question-container">
+        <h5>
+          28. Write a JavaScript program to check whether two given integer
+          values are in the range 50..99 (inclusive). Return true if either of
+          them are in the said range.
+        </h5>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            <p>
+              Number1:{" "}
+              <input
+                id="q28input1"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number1"
+              />
+            </p>
+          </div>
+          <div style={{ display: "flex", marginTop: 12 }}>
+            <p>
+              Number2:{" "}
+              <input
+                id="q28input2"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number2"
+              />
+            </p>
+          </div>
+        </div>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <button onClick={() => question28()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+        <p>
+          Result: <span id="question-28" />
+        </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          29. Write a JavaScript program to check whether three given integer
+          values are in the range 50..99 (inclusive). Return true if one or more
+          of them are in the said range.
+        </h5>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ display: "flex" }}>
+            <p>
+              Number1:{" "}
+              <input
+                id="q29input1"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number1"
+              />
+            </p>
+          </div>
+          <div style={{ display: "flex", marginTop: 12 }}>
+            <p>
+              Number2:{" "}
+              <input
+                id="q29input2"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number2"
+              />
+            </p>
+          </div>
+          <div style={{ display: "flex", marginTop: 12 }}>
+            <p>
+              Number3:{" "}
+              <input
+                id="q29input3"
+                style={{ marginLeft: 12 }}
+                type="number"
+                placeholder="Enter number3"
+              />
+            </p>
+          </div>
+        </div>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <button onClick={() => question29()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
+        <p>
+          Result: <span id="question-29" />
+        </p>
+      </div>
+      <div className="question-container">
+        <h5>
+          30. Write a JavaScript program to check whether a string "Script"
+          presents at 5th (index 4) position in a given string, if "Script"
+          presents in the string return the string without "Script" otherwise
+          return the original one.
+        </h5>
+        <p>
+          Input Text:{" "}
+          <span>
+            <input type="text" id="q30" placeholder="Enter text" />
+          </span>
+        </p>
+        <div style={{ display: "flex", marginTop: 12, width: 280 }}>
+          <p>
+            Result: <span id="question-30" />
+          </p>
+          <button onClick={() => question30()} style={{ marginLeft: "auto" }}>
+            Check
+          </button>
+        </div>
       </div>
     </div>
   );

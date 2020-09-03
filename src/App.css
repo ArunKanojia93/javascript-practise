@@ -33,6 +33,7 @@ button {
   position: relative;
   padding: 8px 12px;
   cursor: pointer;
+  height: 30px;
 }
 
 button:after {

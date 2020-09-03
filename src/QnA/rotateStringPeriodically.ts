@@ -6,7 +6,7 @@ export const rotate = () => {
 
   function rotateString() {
     const letter = newArray.pop() as string;
-    const newWord = newArray.unshift(letter);
+    newArray.unshift(letter);
     const theWord = newArray.join("");
     document.getElementById("rotate")!.innerHTML = theWord;
   }
